@@ -2,5 +2,5 @@
 
 | File | Status | Scope |
 | --- | --- | --- |
-| `FOUNDATION-LEARNER-MODEL.md` | Product direction; implementation not established | Student-by-standard mastery and reports |
-| `MIGRATION-BASELINE.md` | Current documentation record | Establish source/version before build |
+| `FOUNDATION-LEARNER-MODEL.md` | Product direction; current implementation present, full scope coverage unverified | Student-by-standard mastery and reports |
+| [`MIGRATION-BASELINE.md`](../MIGRATION-BASELINE.md) | Current source-identity record | Neutral filename, exact Git blob, and version-status correction |
