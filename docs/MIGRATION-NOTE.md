@@ -1,20 +1,16 @@
 # Migration Note — GradePal
 
-**Prepared:** 18 September 2026
+**Prepared:** 18 September 2026  
+**Status:** Historical migration note; source-status section superseded on 18 September 2026.
 
-This file records the initial move from chat-centered project history toward a repository-centered canonical record.
+The canonical source identity is now recorded in [`MIGRATION-BASELINE.md`](MIGRATION-BASELINE.md). Earlier statements that the source, filename, version or repository checkpoint was “TO ESTABLISH” are no longer current.
 
-## Source status at migration
+## Resolved source status
 
-TO ESTABLISH. Do not infer a current production version or working integrations from the ecosystem vision.
+Canonical preserved source: `GradePal.html`, Git blob `7f637fdca5f72e2790941c1f8d52e7a30590c273`. The same bytes were previously stored as `GradePal_v4.html` and match the preserved `GradePal_v1.html`; therefore no semantic release version is established by either filename. Pre-normalization source checkpoint: `42fb0044b6afbb440c8ada0bb78898e412919142`.
 
-## What to do next
+## Remaining work
 
-1. Identify the exact latest known-good source artifact.
-2. Place/confirm it in this repository.
-3. Update `PROJECT-BRIEF.md` with the exact version/commit.
-4. Copy any unique approved historical specification that is still needed into `docs/change-specs/`.
-5. Verify the repository source can be opened/built/deployed as appropriate.
-6. Only after unique project state is safely preserved should historical monster chats be treated as disposable.
+Use neutral `GradePal.html` as the source baseline. Assign a semantic version only after an actual change, verification checkpoint and release record.
 
-This migration note is not a release specification and does not authorize new features.
+This note is not a release specification and does not authorize new features. Functional, device and deployment verification remain separate from source preservation.
