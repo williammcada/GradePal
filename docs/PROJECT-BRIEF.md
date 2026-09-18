@@ -1,12 +1,12 @@
 # Project Brief — GradePal
 
-**Brief version:** 0.2 — audited documentation revision  
+**Brief version:** 0.3 — source-baseline normalization  
 **Owner:** William McAda · **Credit:** A WILLIAM MCADA PRODUCT  
-**Status:** Revised record for owner review; not an application release or fresh feature approval.  
-**Repository destination:** williammcada/GradePal (verify existence/current branch before source edits).  
-**Current running version:** Not independently verified in this documentation task.  
-**Source/baseline:** Existing GradePal_v1.html is recorded, not a concept-only product. Exact repository commit and runtime verification pending.  
-**Next work:** Preserve v1 baseline; future deliverables use ascending v1.1/v1.2 filenames and explicit migrations.
+**Status:** Canonical source identity reconciled; release, functional and deployment verification remain separately stated.  
+**Repository:** `williammcada/GradePal`, branch `main`.  
+**Current running version:** Not independently verified. Current preserved implementation exists; semantic release version is not established.  
+**Source/baseline:** Canonical preserved source: `GradePal.html`, Git blob `7f637fdca5f72e2790941c1f8d52e7a30590c273`. The same bytes were previously stored as `GradePal_v4.html` and match the preserved `GradePal_v1.html`; therefore no semantic release version is established by either filename. Pre-normalization source checkpoint: `42fb0044b6afbb440c8ada0bb78898e412919142`.  
+**Next work:** Use neutral `GradePal.html` as the source baseline. Assign a semantic version only after an actual change, verification checkpoint and release record.  
 
 ## 1. Purpose, audience and detailed scope
 
@@ -20,7 +20,7 @@
 
 ## 2. This task and boundaries
 
-This revision repairs documentation only. It does not implement features, run application tests, upload source, deploy a site, or alter a repository. Retain the exact current source before implementation. Historical reported functionality is a preservation checklist to reconcile against that source, not permission to recreate the program from prose.
+This normalization establishes the exact repository source path, Git object identity and source-preservation checkpoint; creates the linked migration baseline; and retires stale pre-upload source-status wording. It does not change application behavior, approve new features, rerun product tests or convert source preservation into a release claim.
 
 ## 3. Standards and adoption
 
@@ -35,13 +35,13 @@ The detailed scope above is the feature-preservation inventory. Preserve existin
 
 ## 5. Source, release and deployment discipline
 
-Existing GradePal_v1.html is recorded, not a concept-only product. Exact repository commit and runtime verification pending.
+Canonical preserved source: `GradePal.html`, Git blob `7f637fdca5f72e2790941c1f8d52e7a30590c273`. The same bytes were previously stored as `GradePal_v4.html` and match the preserved `GradePal_v1.html`; therefore no semantic release version is established by either filename. Pre-normalization source checkpoint: `42fb0044b6afbb440c8ada0bb78898e412919142`.
 
-Record exact selected source filename/hash and repository commit when importing it; record live URL/version only after actually opening it. Unknown commit does not mean the product is unbuilt.
+See [`MIGRATION-BASELINE.md`](MIGRATION-BASELINE.md) for the authoritative source manifest and the checks actually performed.
 
 DESIGN → CHANGE SPEC → IMPLEMENT → CHECKPOINT → VERIFY → VERIFIED CHECKPOINT → RELEASE → DEPLOY.
 
-Use “implementation checkpoint” or “release candidate” before verification. Preserve candidate bytes and logs before packaging; recover that checkpoint after a ZIP/upload failure. Do not rebuild a verified implementation to fix delivery. Repository upload and website deployment are different operations; existing automatic deployments may run when main changes.
+Use “implementation checkpoint” or “release candidate” before verification. Preserve candidate bytes and logs before packaging; recover that checkpoint after a ZIP/upload failure. Do not rebuild a verified implementation to fix delivery. Repository upload and website deployment are different operations.
 
 ## 6. Known issues, conflicts and open evidence
 
@@ -60,7 +60,7 @@ Import synthetic classes, compare class/student aggregates, sort/copy under-80 t
 
 | Evidence required | Result in this task |
 | --- | --- |
-| Exact source candidate/commit identified and preserved | Not run — documentation revision only |
+| Exact source candidate/commit identified and preserved | Passed — canonical path and source checkpoint recorded in `docs/MIGRATION-BASELINE.md`; no functional verification inferred |
 | Project-specific checks above, with inputs and expected/actual results | Not run |
 | Save/import/export and malformed-input regression | Not run |
 | Intended devices and real deployment path, where applicable | Not run |
@@ -70,7 +70,9 @@ The next build report must name the candidate, environment and test results; his
 
 ## 8. Handoff and provenance
 
-Required project records: GradePal_v1.html; synthetic GradeCam and standards fixtures; previous v1 behavior and release notes.
+Current source identity is recorded in [`MIGRATION-BASELINE.md`](MIGRATION-BASELINE.md). That manifest supersedes earlier unknown-source or pre-upload statements while preserving the original migration note as history.
+
+Required project records: committed neutral `GradePal.html`; this migration baseline’s prior-filename/blob equivalence record; synthetic GradeCam and standards fixtures; previous behavior and release notes without an unsupported semantic-version claim.
 
 Provenance: previous migration brief and project-history audit in this conversation; directly read dossier/proposal where explicitly stated above. Records not explicitly marked read here are retrieval targets, not claims of fresh inspection. No current app code was tested for this brief.
 
@@ -79,4 +81,3 @@ Before substantive implementation retrieve these records, the current source, ap
 ## 9. Ecosystem boundary
 
 Shared principles do not establish shared code, accounts or interfaces. MathQuest is engagement, TestForge assessment design, GradePal learner-level evidence, and DataDiver institutional analytics. Integration remains separately specified unless confirmed in source. Other projects remain independent unless their brief explicitly says otherwise.
-
